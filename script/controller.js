@@ -1,9 +1,4 @@
 var cars = {
-    "images": [
-                    "images/cars/citroen/mainCitroen.jpg ",
-                    "images/cars/mazda/mainMazda.jpg",
-                    "images/cars/mercedes/mainMercedes.jpg"
-                ],
     "mini": [
         "images/cars/citroen/минимальный.jpg",
         "images/cars/citroen/стандарт.jpg",
@@ -58,27 +53,40 @@ var cars = {
     ],
 };
 
-        function insertImg(index) {
-   var a = document.getElementById("blockContent1");
-           var block = document.getElementById("bigImg");
-            block.src = cars.images[index];
-           a.appendChild(block);
-           currCar = index;
-        }
+function selectDefaultCar() {
+    var arr = document.getElementsByClassName("triangle_red");
+    for (var i = 0; i < arr.length; i++) {
+        arr[i].classList.remove("active");
+        arr[i].childNodes[0].classList.remove("active");
+    }
 
-        var currCar=0;
+    var a = document.getElementById("categorieStandart2");
+    a.classList.add("active");
+    a.childNodes[0].classList.add("active");
+}
+
+var currCar = 0;
 
 document.querySelector("#citroen").addEventListener("click",
     function (index) {
-    insertImg(0);
-});
+        currCar = 0;
+        selectDefaultCar();
+        changePackImage(3);
+
+    });
 document.querySelector("#mazda").addEventListener("click",
 function (index) {
-    insertImg(1);
+    currCar = 1;
+    selectDefaultCar();
+    changePackImage(3);
+
 });
 document.querySelector("#mercedes").addEventListener("click",
 function (index) {
-    insertImg(2);
+    currCar = 2;
+    selectDefaultCar();
+    changePackImage(3);
+
 });
 
 function changeImage(index, src) {

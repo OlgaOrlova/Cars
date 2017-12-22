@@ -55,22 +55,25 @@
         <div class="blockContent"><div class="nameClass center-block">ПРЕМИУМ КЛАСС**</div>
             <img src="images/cars/mercedes/mainMercedes.jpg" class="pic">
             <div class="calculBlock">
-            <div  class="buttonPrice nameClassBtn center-block butMenu" id="mercedes">РАССЧИТАТЬ СТОИМОСТЬ</div>
+                <div class="buttonPrice nameClassBtn center-block butMenu" data-toggle="dropdown" id="mercedes">
+                    РАССЧИТАТЬ СТОИМОСТЬ
+                </div>
                 <p id="triangle-downPremium" class="currentCarIndecator"></p></div>
-            <ul class="mui-dropdown__menu " id="mainDropdown">
+            <ul class="dropdown-menu" id="mainDropdown">
                 <li id="categorieMin" class="triangle_red"><a href="#" class="rectangleRed"><p>МИНИМАЛЬНЫЙ</p></a></li>
                 <li id="categorieStandart" class="triangle_red"><a href="#" class="rectangleRed"><p>СТАНДАРТ</p></a>
                 </li>
                 <li id="categorieStandart1" class="triangle_red"><a href="#" class="rectangleRed"><p>СТАНДАРТ+</p></a>
                 </li>
-                <li id="categorieStandart2" class="triangle_red"><a href="#" class="rectangleRed"><p>СТАНДАРТ++</p></a>
+                <li id="categorieStandart2" class="triangle_red active"><a href="#" class="rectangleRed active"><p>
+                    СТАНДАРТ++</p></a>
                 </li>
                 <li id="categorieStandart3" class="triangle_red"><a href="#" class="rectangleRed"><p>СТАНДАРТ+++</p></a>
                 </li>
                 <li class="triangle_red" id="full"><a href="#" class="rectangleRed"><p>ЦЕЛИКОМ</p></a></li>
-                <li data-mui-toggle="dropdown" class="notice point" id="triangle_left"><a href="#" id="rectangle"><p>
+                <li data-toggle="dropdown" class="notice point" id="triangle_left"><a href="#" id="rectangle"><p>
                     ЧАСТЯМИ</p></a></li>
-                <ul class="mui-dropdown__menu " id="dropdown1" >
+                <ul class="dropdown-menu" id="dropdown1">
                     <li class="triangle_red "><a href="#" class="rectangleRed"><p class="planPartialItem">ОПТИКА</p></a>
                     </li>
                     <li class="triangle_red "><a href="#" class="rectangleRed"><p class="planPartialItem">ПОРОГИ

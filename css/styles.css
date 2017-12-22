@@ -1,208 +1,245 @@
-
-    /** header **/
+/** header **/
 #header-nav {
     background-color: #eb5346;
     border-radius: 0;
     border: 0;
-  font-size: 28px;
+    font-size: 28px;
     font-family: Arial;
     color: white;
 }
-    #navbar-header{
-        width: 100%;
-text-align: center;
-    }
-    #logo-img {
-        width: 39px;
-        height: 50px;
-        margin: 10px 15px 10px 0;
-    }
-    /*Start first section blocks csrs*/
-.blockCar{
 
+#navbar-header {
+    width: 100%;
+    text-align: center;
+}
+
+#logo-img {
+    width: 39px;
+    height: 50px;
+    margin: 10px 15px 10px 0;
+}
+
+/*Start first section blocks csrs*/
+.blockCar {
 
 }
-.s{
+
+.s {
     background-color: black;
 }
-.blockContent{
+
+.blockContent {
     width: 350px;
     height: 250px;
     background-color: white;
     margin: 10px;
     padding: 0;
-    }
-    .blockContent1{
+}
+
+.blockContent1 {
 
     margin: 10px;
-    }
-.pic{
+}
+
+.pic {
     width: 290px;
     height: 155px;
 }
-.nameClass{
-padding: 2px;
-text-align: center;
-width: 150px;
+
+.nameClass {
+    padding: 2px;
+    text-align: center;
+    width: 150px;
     background-color: black;
     color: white;
 }
-.nameClassBtn{
-margin-top: 30px;
+
+.nameClassBtn {
+    margin-top: 30px;
     bottom: 0;
     text-align: center;
     width: 220px;
-    background-color:#eb5346;
+    background-color: #eb5346;
     color: white;
 }
-.buttonPrice{
+
+.buttonPrice {
     border-radius: 0;
 }
+
 /*Dropdowns*/
 
+.line {
 
-    .line {
+    border-left: 1px solid rgba(49, 49, 49, 0.99); /* Параметры линии */
+    margin-left: 10px; /* Отступ слева */
+    padding-left: 10px; /* Расстояние от линии до текста */
 
-        border-left: 1px solid rgba(49, 49, 49, 0.99); /* Параметры линии */
-        margin-left: 10px; /* Отступ слева */
-        padding-left: 10px; /* Расстояние от линии до текста */
+}
 
-    }
-   #mainDropdown{
-z-index: 1;
-box-shadow: none;
-       /*box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.3);*/
-       margin-left: 120px;
-width: 200px;
-       right: 0;
-       text-align: inherit;
-       font-size: 12px;
-       border-left: 1px solid #000;
-   }
-
-#dropdown1{
+#mainDropdown {
+    z-index: 1;
+    box-shadow: none;
+    /*box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.3);*/
+    margin-left: 120px;
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    width: 200px;
+    right: 0;
+    text-align: inherit;
+    font-size: 12px;
     border-left: 1px solid #000;
+}
+
+#dropdown1 {
+    border-radius: 0;
+
+    border-left: 1px solid #000;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
     padding-left: 0px;
     margin-left: -1px;
     font-size: 10px;
     box-shadow: none;
     /*box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.3);*/
 }
-.point{
 
-
+.point {
 
     margin-right: 50px;
 }
 
+.currentCarIndecator {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #ea5245;
+}
 
-    .currentCarIndecator{
-        display: none;
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-top: 20px solid #ea5245;
-    }
-    .calculBlock{
-       width: 100%;
-    }
-    .butMenu{
-        margin-bottom: 5px;
-    }
-    .currentCarIndecator{
-        margin: auto;
-    }
+.calculBlock {
+    width: 100%;
+}
 
-    /*shape*/
-    /*.trapezoid {*/
-        /*border-bottom: 50px solid #555;*/
-        /*border-left: 25px solid transparent;*/
-        /*border-right: 0px solid transparent;*/
-        /*height: 0;*/
-        /*width: 125px;}*/
+.butMenu {
+    margin-bottom: 5px;
+}
 
-    /*.trapezoid:before {*/
-        /*border-bottom: 50px solid #555;*/
-        /*border-left: 25px solid transparent;*/
-        /*border-right: 0px solid transparent;*/
-        /*height: 0;*/
-        /*width: 125px;*/
-        /*-moz-transform: scaleY(-1);*/
-        /*-o-transform: scaleY(-1);*/
-        /*-webkit-transform: scaleY(-1);*/
-        /*transform: scaleY(-1);*/
-        /*filter: flipV;*/
-        /*-ms-filter: "FlipV";*/
-    /*}*/
-    /*.categories:hover {*/
-    /*color: #ffe; !* Цвет текста активного пункта *!*/
-    /*background-color:red !important!* Цвет фона активного пункта *!*/
-    /*}*/
-    /*Partial section header*/
-    #triangle_left {
-        right: 17px;
-        position: relative;
-        width: 0;
-        height: 0;
-        border-top: 11px solid transparent;
-        border-right: 16px solid #262e39;
-        border-bottom: 11px solid transparent;
-    }
+.currentCarIndecator {
+    margin: auto;
+}
 
-    #rectangle {
-        position: absolute;
-        width: 200px;
-        height: 22px;
-        background: #262e39;
-        left: 16px;
-        bottom: -11px;
-        color: white;
-    }
+/*shape*/
+/*.trapezoid {*/
+/*border-bottom: 50px solid #555;*/
+/*border-left: 25px solid transparent;*/
+/*border-right: 0px solid transparent;*/
+/*height: 0;*/
+/*width: 125px;}*/
 
-    /* End Partial section header*/
+/*.trapezoid:before {*/
+/*border-bottom: 50px solid #555;*/
+/*border-left: 25px solid transparent;*/
+/*border-right: 0px solid transparent;*/
+/*height: 0;*/
+/*width: 125px;*/
+/*-moz-transform: scaleY(-1);*/
+/*-o-transform: scaleY(-1);*/
+/*-webkit-transform: scaleY(-1);*/
+/*transform: scaleY(-1);*/
+/*filter: flipV;*/
+/*-ms-filter: "FlipV";*/
+/*}*/
+/*.categories:hover {*/
+/*color: #ffe; !* Цвет текста активного пункта *!*/
+/*background-color:red !important!* Цвет фона активного пункта *!*/
+/*}*/
+/*Partial section header*/
+#triangle_left {
+    right: 17px;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent;
+    border-right: 16px solid #262e39;
+    border-bottom: 11px solid transparent;
+}
 
-    .triangle_red:hover {
-        right: 17px;
-        position: relative;
-        width: 0;
-        height: 0;
-        border-top: 11px solid transparent;
-        border-right: 16px solid #eb5346 !important;
-        border-bottom: 11px solid transparent;
+#rectangle {
+    position: absolute;
+    width: 200px;
+    height: 22px;
+    background: #262e39;
+    left: 16px;
+    bottom: -11px;
+    color: white;
+}
 
-    }
+/* End Partial section header*/
+li.active {
+    right: 17px;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent;
+    border-right: 16px solid #eb5346 !important;
+    border-bottom: 11px solid transparent;
+}
 
-    .rectangleRed:hover {
-        position:absolute;
-        width: 200px;
-        height: 22px;
-        background: #eb5346 !important;
-        left:16px;
-        bottom:-11px;
-    }
+a.active {
+    position: absolute;
+    width: 200px;
+    height: 22px;
+    background: #eb5346 !important;
+    left: 16px;
+    bottom: -11px;
+}
 
-    /*Planse*/
-    .planPartialItem {
-        margin-left: 10px;
-    }
+.triangle_red:hover {
+    right: 17px;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent;
+    border-right: 16px solid #eb5346 !important;
+    border-bottom: 11px solid transparent;
 
-    /*. planseTriangle_red:hover{*/
-    /*right: 17px;*/
-    /*position: relative;*/
-    /*width: 0;*/
-    /*height: 0;*/
-    /*border-top: 11px solid transparent;*/
-    /*border-right:16px solid red !important;*/
-    /*border-bottom: 11px solid transparent;*/
+}
 
-    /*}*/
-    /*.plansRectangleRed:hover{*/
-    /*position:absolute;*/
-    /*width: 200px;*/
-    /*height: 22px;*/
-    /*background: red !important;*/
-    /*left:16px;*/
-    /*bottom:-11px;*/
-    /*}*/
-    /* end Dropdowns*/
+.rectangleRed:hover {
+    position: absolute;
+    width: 200px;
+    height: 22px;
+    background: #eb5346 !important;
+    left: 16px;
+    bottom: -11px;
+}
+
+/*Planse*/
+.planPartialItem {
+    margin-left: 10px;
+}
+
+/*. planseTriangle_red:hover{*/
+/*right: 17px;*/
+/*position: relative;*/
+/*width: 0;*/
+/*height: 0;*/
+/*border-top: 11px solid transparent;*/
+/*border-right:16px solid red !important;*/
+/*border-bottom: 11px solid transparent;*/
+
+/*}*/
+/*.plansRectangleRed:hover{*/
+/*position:absolute;*/
+/*width: 200px;*/
+/*height: 22px;*/
+/*background: red !important;*/
+/*left:16px;*/
+/*bottom:-11px;*/
+/*}*/
+/* end Dropdowns*/

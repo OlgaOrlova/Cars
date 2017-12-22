@@ -51,4 +51,11 @@ $(document).ready(function(){
         $(".currentCarIndecator").hide();
          $("#triangle-downPremium").show();
      });
+
+    $('li.triangle_red').mouseenter(function () {
+        $('li.triangle_red').removeClass("active");
+        $('a.rectangleRed').removeClass("active");
+        $(this).addClass("active");
+        $(this).children(":first").addClass("active");
+    });
 });

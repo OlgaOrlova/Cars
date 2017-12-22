@@ -1,0 +1,22 @@
+<svg id="Слой_4" data-name="Слой 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.17 99.49">
+    <defs>
+        <style>.cls-1{fill:#eb5346;}</style>
+    </defs>
+    <title>пороги</title>
+    <path class="cls-1" d="M1597,238.33h22a18.16,18.16,0,0,0-18.16-18.16H1597v18.16Z"
+          transform="translate(-1284.82 -220.17)"/>
+    <path class="cls-1" d="M1305.65,220.17h-1.59A18.08,18.08,0,0,0,1286,238.25v0.08h19.67V220.17Z"
+          transform="translate(-1284.82 -220.17)"/>
+    <rect class="cls-1" x="22.5" width="288" height="18.16"/>
+    <rect class="cls-1" x="44.17" y="18.16" width="7.67" height="4"/>
+    <rect class="cls-1" x="286" y="18.16" width="7.67" height="4"/>
+    <path class="cls-1" d="M1306.82,301.51h-22A18.16,18.16,0,0,0,1303,319.67h3.84V301.51Z"
+          transform="translate(-1284.82 -220.17)"/>
+    <path class="cls-1" d="M1598.15,319.67h1.59a18.08,18.08,0,0,0,18.08-18.08v-0.08h-19.67v18.16Z"
+          transform="translate(-1284.82 -220.17)"/>
+    <rect class="cls-1" x="23.67" y="81.33" width="288" height="18.16"/>
+    <rect class="cls-1" x="1567.15" y="297.51" width="7.67" height="4"
+          transform="translate(1857.15 378.84) rotate(180)"/>
+    <rect class="cls-1" x="1325.32" y="297.51" width="7.67" height="4"
+          transform="translate(1373.48 378.84) rotate(180)"/>
+</svg>

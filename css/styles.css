@@ -69,7 +69,7 @@ margin-top: 30px;
 
     }
    #mainDropdown{
-
+z-index: 1;
 box-shadow: none;
        /*box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.3);*/
        margin-left: 120px;
@@ -77,6 +77,7 @@ width: 200px;
        right: 0;
        text-align: inherit;
        font-size: 12px;
+       background-color: powderblue;
    }
 
 #dropdown1{
@@ -87,10 +88,18 @@ width: 200px;
     box-shadow: none;
     /*box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.3);*/
 }
+
+.a{
+
+    z-index: 4;
+    background-color: red;
+    width: 1px;
+    height: 100px;
+}
 .point{
 
 
-    background-color: yellow;
+
     margin-right: 50px;
 }
 
@@ -112,16 +121,45 @@ width: 200px;
     .currentCarIndecator{
         margin: auto;
     }
-   /*.notice{*/
-       /*z-index: 2;*/
-        /*padding: 0;*/
-        /*float: left;*/
-        /*margin-right: 46px;*/
-        /*top: 0;*/
-        /*height: 29px;*/
-        /*width: 191px;*/
-        /*background: #0c1c97;*/
-        /*border-top-left-radius: 100px 10px;*/
-        /*border-bottom-left-radius: 100px 10px;*/
+
+    /*shape*/
+    /*.trapezoid {*/
+        /*border-bottom: 50px solid #555;*/
+        /*border-left: 25px solid transparent;*/
+        /*border-right: 0px solid transparent;*/
+        /*height: 0;*/
+        /*width: 125px;}*/
+
+    /*.trapezoid:before {*/
+        /*border-bottom: 50px solid #555;*/
+        /*border-left: 25px solid transparent;*/
+        /*border-right: 0px solid transparent;*/
+        /*height: 0;*/
+        /*width: 125px;*/
+        /*-moz-transform: scaleY(-1);*/
+        /*-o-transform: scaleY(-1);*/
+        /*-webkit-transform: scaleY(-1);*/
+        /*transform: scaleY(-1);*/
+        /*filter: flipV;*/
+        /*-ms-filter: "FlipV";*/
     /*}*/
+
+
+    #triangle_left {
+        right: 17px;
+        position: relative;
+        width: 0;
+        height: 0;
+        border-top: 11px solid transparent;
+        border-right:16px solid #4da1f7;
+        border-bottom: 11px solid transparent;
+    }
+    #rectangle {
+        position:absolute;
+        width: 200px;
+        height: 22px;
+        background: #4da1f7;
+        left:16px;
+        bottom:-11px;
+    }
     /* end Dropdowns*/

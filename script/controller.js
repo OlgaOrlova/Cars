@@ -11,14 +11,15 @@ var cars = {
         "images/cars/citroen/стандарт2.jpg",
         "images/cars/citroen/стандарт3.jpg",
         "images/cars/citroen/целиком.jpg",
+
+        "images/cars/citroen/оптика.jpg",
+        "images/cars/citroen/пороги-внутренние.jpg",
+        "images/cars/citroen/пороги-наружние.jpg",
         "images/cars/citroen/двери.jpg ",
         "images/cars/citroen/задние-крылья.jpg",
-        "images/cars/citroen/задний-бампер.jpg",
         "images/cars/citroen/капот.jpg",
-        "images/cars/citroen/оптика.jpg",
         "images/cars/citroen/передний-бампер.jpg",
-        "images/cars/citroen/пороги-внутренние.jpg",
-        "images/cars/citroen/пороги-наружние.jpg"
+        "images/cars/citroen/задний-бампер.jpg"
     ],
     "mazda": [
         "images/cars/mazda/минимальный.jpg",
@@ -27,14 +28,15 @@ var cars = {
         "images/cars/mazda/стандарт2.jpg",
         "images/cars/mazda/стандарт3.jpg",
         "images/cars/mazda/целиком.jpg",
+
+        "images/cars/mazda/оптика.jpg",
+        "images/cars/mazda/пороги-внутренние.jpg",
+        "images/cars/mazda/пороги-наружние.jpg",
         "images/cars/mazda/двери.jpg ",
         "images/cars/mazda/задние-крылья.jpg",
-        "images/cars/mazda/задний-бампер.jpg",
         "images/cars/mazda/капот.jpg",
-        "images/cars/mazda/оптика.jpg",
         "images/cars/mazda/передний-бампер.jpg",
-        "images/cars/mazda/пороги-внутренние.jpg",
-        "images/cars/mazda/пороги-наружние.jpg"
+        "images/cars/mazda/задний-бампер.jpg"
     ],
     "mercedes": [
         "images/cars/mercedes/минимальный.jpg",
@@ -43,17 +45,18 @@ var cars = {
         "images/cars/mercedes/стандарт2.jpg",
         "images/cars/mercedes/стандарт3.jpg",
         "images/cars/mercedes/целиком.jpg",
+
+        "images/cars/mercedes/оптика.jpg",
+        "images/cars/mercedes/пороги-внутренние.jpg",
+        "images/cars/mercedes/пороги-наружние.jpg",
         "images/cars/mercedes/двери.jpg ",
         "images/cars/mercedes/задние-крылья.jpg",
-        "images/cars/mercedes/задний-бампер.jpg",
         "images/cars/mercedes/капот.jpg",
-        "images/cars/mercedes/оптика.jpg",
         "images/cars/mercedes/передний-бампер.jpg",
-        "images/cars/mercedes/пороги-внутренние.jpg",
-        "images/cars/mercedes/пороги-наружние.jpg"
+        "images/cars/mercedes/задний-бампер.jpg"
 
     ],
-        }
+};
 
         function insertImg(index) {
    var a = document.getElementById("blockContent1");
@@ -130,5 +133,39 @@ document.querySelector("#categorieStandart3").addEventListener("mouseover",
 document.querySelector("#full").addEventListener("mouseover",
     function (index) {
         changePackImage(5);
+    });
+
+document.querySelector("#subcatOptic").addEventListener("mouseover",
+    function (index) {
+        changePackImage(6);
+    });
+document.querySelector("#subcatPorogInner").addEventListener("mouseover",
+    function (index) {
+        changePackImage(7);
+    });
+document.querySelector("#subcatPorogOuter").addEventListener("mouseover",
+    function (index) {
+        changePackImage(8);
+    });
+document.querySelector("#subcatDoor").addEventListener("mouseover",
+    function (index) {
+        changePackImage(9);
+    });
+document.querySelector("#subcatSides").addEventListener("mouseover",
+    function (index) {
+        changePackImage(10);
+    });
+document.querySelector("#subcatFrone").addEventListener("mouseover",
+    function (index) {
+        changePackImage(11);
+    });
+
+document.querySelector("#subcatFront").addEventListener("mouseover",
+    function (index) {
+        changePackImage(12);
+    });
+document.querySelector("#subcatBack").addEventListener("mouseover",
+    function (index) {
+        changePackImage(13);
     });
 

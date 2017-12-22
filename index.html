@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Chu's China Bistro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/mui/css/mui.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="stylesheets/screen.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<header>
+    <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header" id="navbar-header">
+                <p>
+                    <img src="images/header/mainHeader.png" alt="Kosher certification" id="logo-img">
+                    <span>Kosher Certified</span>
+                </p>
+            </div>
+        </div>
+
+    </nav>
+
+</header>
+<hr>
+<section id="main-content" class="container">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 blockCar"><div class="blockContent">
+        <div class="nameClass center-block">КЛАСС MINI*</div>
+        <img src="images/cars/citroen/mainCitroen.jpg" class="pic" >
+        <div class="calculBlock">
+        <div  class="buttonPrice nameClassBtn center-block butMenu" id="citroën">РАССЧИТАТЬ СТОИМОСТЬ</div>
+        <p id="triangle-downMini" class="currentCarIndecator" ></p>
+        </div>
+    </div></div>
+
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 blockCar">
+        <div class="blockContent"><div class="nameClass center-block">СРЕДНИЙ КЛАСС*</div>
+            <img src="images/cars/mazda/mainMazda.jpg" class="pic" id="s">
+            <div class="calculBlock">
+            <div  class="buttonPrice nameClassBtn center-block butMenu" id="mazda">РАССЧИТАТЬ СТОИМОСТЬ</div>
+                <p id="triangle-downMidle" class="currentCarIndecator"></p></div>
+        </div></div>
+
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 blockCar">
+        <div class="blockContent"><div class="nameClass center-block">ПРЕМИУМ КЛАСС**</div>
+            <img src="images/cars/mercedes/mainMercedes.jpg" class="pic">
+            <div class="calculBlock">
+            <div  class="buttonPrice nameClassBtn center-block butMenu" id="mercedes">РАССЧИТАТЬ СТОИМОСТЬ</div>
+                <p id="triangle-downPremium" class="currentCarIndecator"></p></div>
+            <ul class="mui-dropdown__menu line" id="mainDropdown">
+                <li class="categories" id="categorieMin"><a href="#">МИНИМАЛЬНЫЙ</a></li>
+                <li class="categories" id="categorieStandart"><a href="#">СТАНДАРТ</a></li>
+                <li class="categories" id="categorieStandart1"><a href="#">СТАНДАРТ+</a></li>
+                <li class="categories" id="categorieStandart2"><a href="#">СТАНДАРТ++</a></li>
+                <li class="categories" id="categorieStandart3"><a href="#">СТАНДАРТ+++</a></li>
+                <li class="categories" id="full"><a href="#">ЦЕЛИКОМ</a></li>
+                <li  data-mui-toggle="dropdown"  class="notice point" ><a href="#">ЧАСТЯМИ</a></li>
+                <ul class="mui-dropdown__menu line" id="dropdown1" >
+                    <li ><a href="#">ОПТИКА</a></li>
+                    <li ><a href="#">ПОРОГИ ВНУТРЕННИЕ</a></li>
+                    <li ><a href="#">ПОРОГИ НАРУЖНЫЕ</a></li>
+                    <li ><a href="#">ДВЕРИ (4ШТ)</a></li>
+                    <li ><a href="#">ЗАДНИЕ КРЫЛЬЯ</a></li>
+                    <li ><a href="#">КАПОТ</a></li>
+                    <li ><a href="#">ПЕРЕДНИЙ БАМПЕР</a></li>
+                    <li ><a href="#">ЗАДНИЙ БАМПЕР</a></li>
+                </ul>
+            </ul>
+        </div></div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blockCar">
+        <p class="blockContent1" id="blockContent1" ><img id="bigImg"></p></div>
+</section>
+
+<script src="libs/jquery-2.1.4.min.js"></script>
+<script src="libs/bootstrap.min.js"></script>
+<script src="libs/ajax-utils.js"></script>
+<script src="libs/mui/js/mui.min.js"></script>
+
+<script src="script/script.js"></script>
+<script src="script/controller.js"></script>
+
+</body>
+
+</html>

@@ -82,7 +82,7 @@ width: 200px;
 
 #dropdown1{
     border-left: 1px solid #000;
-    padding-left: 25px;
+    padding-left: 0px;
     margin-left: -1px;
     font-size: 10px;
     box-shadow: none;
@@ -102,7 +102,7 @@ width: 200px;
         height: 0;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
-        border-top: 20px solid red;
+        border-top: 20px solid #ea5245;
     }
     .calculBlock{
        width: 100%;
@@ -135,23 +135,74 @@ width: 200px;
         /*filter: flipV;*/
         /*-ms-filter: "FlipV";*/
     /*}*/
-
-
+    /*.categories:hover {*/
+    /*color: #ffe; !* Цвет текста активного пункта *!*/
+    /*background-color:red !important!* Цвет фона активного пункта *!*/
+    /*}*/
+    /*Partial section header*/
     #triangle_left {
         right: 17px;
         position: relative;
         width: 0;
         height: 0;
         border-top: 11px solid transparent;
-        border-right:16px solid #4da1f7;
+        border-right: 16px solid #262e39;
         border-bottom: 11px solid transparent;
     }
+
     #rectangle {
+        position: absolute;
+        width: 200px;
+        height: 22px;
+        background: #262e39;
+        left: 16px;
+        bottom: -11px;
+        color: white;
+    }
+
+    /* End Partial section header*/
+
+    .triangle_red:hover {
+        right: 17px;
+        position: relative;
+        width: 0;
+        height: 0;
+        border-top: 11px solid transparent;
+        border-right: 16px solid #eb5346 !important;
+        border-bottom: 11px solid transparent;
+
+    }
+
+    .rectangleRed:hover {
         position:absolute;
         width: 200px;
         height: 22px;
-        background: #4da1f7;
+        background: #eb5346 !important;
         left:16px;
         bottom:-11px;
     }
+
+    /*Planse*/
+    .planPartialItem {
+        margin-left: 10px;
+    }
+
+    /*. planseTriangle_red:hover{*/
+    /*right: 17px;*/
+    /*position: relative;*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border-top: 11px solid transparent;*/
+    /*border-right:16px solid red !important;*/
+    /*border-bottom: 11px solid transparent;*/
+
+    /*}*/
+    /*.plansRectangleRed:hover{*/
+    /*position:absolute;*/
+    /*width: 200px;*/
+    /*height: 22px;*/
+    /*background: red !important;*/
+    /*left:16px;*/
+    /*bottom:-11px;*/
+    /*}*/
     /* end Dropdowns*/

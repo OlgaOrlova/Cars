@@ -243,3 +243,46 @@ a.active {
 /*bottom:-11px;*/
 /*}*/
 /* end Dropdowns*/
+
+/*Price*/
+#linePrice {
+    background-color: black;
+    height: 1px;
+    width: 350px;
+}
+
+.price {
+    color: #eb5346;
+    font-size: 25px;
+
+}
+
+#price {
+    color: #eb5346;
+    font-size: 25px;
+    margin-left: 45px;
+}
+
+#allPrice {
+    position: relative;
+    font-size: 20px;
+    padding-right: 30px;
+    width: 780px;
+}
+
+#number {
+    border-radius: 0;
+    top: -10px;
+    right: 0;
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #262e39;
+    color: white;
+    font-size: 30px;
+    width: 350px;
+
+}
+
+/*end price*/

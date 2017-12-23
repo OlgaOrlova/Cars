@@ -71,21 +71,21 @@ document.querySelector("#citroen").addEventListener("click",
     function (index) {
         currCar = 0;
         selectDefaultCar();
-        changePackImage(3);
+        onListItemSelected(3);
 
     });
 document.querySelector("#mazda").addEventListener("click",
 function (index) {
     currCar = 1;
     selectDefaultCar();
-    changePackImage(3);
+    onListItemSelected(3);
 
 });
 document.querySelector("#mercedes").addEventListener("click",
 function (index) {
     currCar = 2;
     selectDefaultCar();
-    changePackImage(3);
+    onListItemSelected(3);
 
 });
 
@@ -97,7 +97,13 @@ function changeImage(index, src) {
     a.appendChild(block);
 }
 
-function changePackImage(index) {
+function toggleOrderVisibility(index) {
+    if (index < 5) {
+
+    }
+}
+
+function onListItemSelected(index) {
     var currentCar = getCurrentCar();
     var src;
     switch (currentCar){
@@ -112,6 +118,7 @@ function changePackImage(index) {
             break;
     }
     changeImage(index, src);
+    toggleOrderVisibility(index);
 }
 
 function getCurrentCar(){
@@ -120,60 +127,60 @@ function getCurrentCar(){
 
 document.querySelector("#categorieMin").addEventListener("mouseover",
     function (index) {
-        changePackImage(0);
+        onListItemSelected(0);
     });
 document.querySelector("#categorieStandart").addEventListener("mouseover",
     function (index) {
-        changePackImage(1);
+        onListItemSelected(1);
     });
 document.querySelector("#categorieStandart1").addEventListener("mouseover",
     function (index) {
-        changePackImage(2);
+        onListItemSelected(2);
     });
 document.querySelector("#categorieStandart2").addEventListener("mouseover",
     function (index) {
-        changePackImage(3);
+        onListItemSelected(3);
     });
 document.querySelector("#categorieStandart3").addEventListener("mouseover",
     function (index) {
-        changePackImage(4);
+        onListItemSelected(4);
     });
 document.querySelector("#full").addEventListener("mouseover",
     function (index) {
-        changePackImage(5);
+        onListItemSelected(5);
     });
 
 document.querySelector("#subcatOptic").addEventListener("mouseover",
     function (index) {
-        changePackImage(6);
+        onListItemSelected(6);
     });
 document.querySelector("#subcatPorogInner").addEventListener("mouseover",
     function (index) {
-        changePackImage(7);
+        onListItemSelected(7);
     });
 document.querySelector("#subcatPorogOuter").addEventListener("mouseover",
     function (index) {
-        changePackImage(8);
+        onListItemSelected(8);
     });
 document.querySelector("#subcatDoor").addEventListener("mouseover",
     function (index) {
-        changePackImage(9);
+        onListItemSelected(9);
     });
 document.querySelector("#subcatSides").addEventListener("mouseover",
     function (index) {
-        changePackImage(10);
+        onListItemSelected(10);
     });
 document.querySelector("#subcatFrone").addEventListener("mouseover",
     function (index) {
-        changePackImage(11);
+        onListItemSelected(11);
     });
 
 document.querySelector("#subcatFront").addEventListener("mouseover",
     function (index) {
-        changePackImage(12);
+        onListItemSelected(12);
     });
 document.querySelector("#subcatBack").addEventListener("mouseover",
     function (index) {
-        changePackImage(13);
+        onListItemSelected(13);
     });
 

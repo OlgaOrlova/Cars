@@ -98,12 +98,35 @@ function changeImage(index, src) {
 }
 
 function showPlanIndicator(index) {
-    var carElements = plans.mini;
     var container = document.getElementById("planIndicators");
 
+    if (index > 5) {
+        container.innerHTML = "";
+        return;
+    }
+    var carElements;
+    switch (index) {
+        case 0:
+            carElements = plans.mini;
+            break;
+        case 1:
+            carElements = plans.standart;
+            break;
+        case 2:
+            carElements = plans.standart1;
+            break;
+        case 3:
+            carElements = plans.standart2;
+            break;
+        case 4:
+            carElements = plans.standart3;
+            break;
+        case 5:
+            carElements = plans.whole;
+            break;
+    }
     var template = document.getElementById("planIndicatorTemplate");
     var templateSnippet = Handlebars.compile(template.innerHTML);
-
     var pre = {"carElements": carElements};
     var a = templateSnippet(pre);
     container.innerHTML = a;

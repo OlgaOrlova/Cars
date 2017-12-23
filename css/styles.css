@@ -6,6 +6,7 @@
     font-size: 28px;
     font-family: Arial;
     color: white;
+    border-bottom: 1px solid black;
 }
 
 #navbar-header {

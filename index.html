@@ -104,7 +104,9 @@
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blockCar">
         <p class="blockContent1" id="blockContent1" ><img id="bigImg"></p></div>
 
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blockCar">
+    <div id="planIndicators" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blockCar">
+
+
     </div>
 
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -118,13 +120,29 @@
     </div>
 </section>
 
+
+<script id="planIndicatorTemplate" type="text/x-handlebars-template">
+    {{#each carElements}}
+
+    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+
+        <img width="80" height="80" src="{{imgRes}}"/>
+        <div class="card-body">
+            <h4 class="card-title">{{name}}</h4>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
 <script src="libs/jquery-2.1.4.min.js"></script>
 <script src="libs/bootstrap.min.js"></script>
 <script src="libs/ajax-utils.js"></script>
 <script src="libs/mui/js/mui.min.js"></script>
+<script src="libs/handlebars-v4.0.10.js"></script>
 
 <script src="script/script.js"></script>
 <script src="script/controller.js"></script>
+<script src="script/planIndicator.js"></script>
 
 </body>
 

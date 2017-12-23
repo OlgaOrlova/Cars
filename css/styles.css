@@ -243,7 +243,11 @@ a.active {
 /*bottom:-11px;*/
 /*}*/
 /* end Dropdowns*/
-
+.card-title {
+    color: #eb5346;
+    font-size: 12px;
+    text-align: center;
+}
 /*Price*/
 #linePrice {
     background-color: black;

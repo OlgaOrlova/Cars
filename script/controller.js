@@ -75,19 +75,19 @@ document.querySelector("#citroen").addEventListener("click",
 
     });
 document.querySelector("#mazda").addEventListener("click",
-function (index) {
-    currCar = 1;
-    selectDefaultCar();
-    onListItemSelected(3);
+    function (index) {
+        currCar = 1;
+        selectDefaultCar();
+        onListItemSelected(3);
 
-});
+    });
 document.querySelector("#mercedes").addEventListener("click",
-function (index) {
-    currCar = 2;
-    selectDefaultCar();
-    onListItemSelected(3);
+    function (index) {
+        currCar = 2;
+        selectDefaultCar();
+        onListItemSelected(3);
 
-});
+    });
 
 function changeImage(index, src) {
     var a = document.getElementById("blockContent1");
@@ -97,16 +97,22 @@ function changeImage(index, src) {
     a.appendChild(block);
 }
 
-function toggleOrderVisibility(index) {
-    if (index < 5) {
+function showPlanIndicator(index) {
+    var carElements = plans.mini;
+    var container = document.getElementById("planIndicators");
 
-    }
+    var template = document.getElementById("planIndicatorTemplate");
+    var templateSnippet = Handlebars.compile(template.innerHTML);
+
+    var pre = {"carElements": carElements};
+    var a = templateSnippet(pre);
+    container.innerHTML = a;
 }
 
 function onListItemSelected(index) {
     var currentCar = getCurrentCar();
     var src;
-    switch (currentCar){
+    switch (currentCar) {
         case 0:
             src = cars.mini;
             break;
@@ -118,10 +124,10 @@ function onListItemSelected(index) {
             break;
     }
     changeImage(index, src);
-    toggleOrderVisibility(index);
+    showPlanIndicator(index);
 }
 
-function getCurrentCar(){
+function getCurrentCar() {
     return currCar;
 }
 

@@ -53,7 +53,7 @@ var cars = {
     ],
 };
 
-function selectDefaultCar() {
+function selectDefaultPlan() {
     var arr = document.getElementsByClassName("triangle_red");
     for (var i = 0; i < arr.length; i++) {
         arr[i].classList.remove("active");
@@ -70,21 +70,21 @@ var currCar = 0;
 document.querySelector("#citroen").addEventListener("click",
     function (index) {
         currCar = 0;
-        selectDefaultCar();
+        selectDefaultPlan();
         onListItemSelected(3);
 
     });
 document.querySelector("#mazda").addEventListener("click",
     function (index) {
         currCar = 1;
-        selectDefaultCar();
+        selectDefaultPlan();
         onListItemSelected(3);
 
     });
 document.querySelector("#mercedes").addEventListener("click",
     function (index) {
         currCar = 2;
-        selectDefaultCar();
+        selectDefaultPlan();
         onListItemSelected(3);
 
     });
